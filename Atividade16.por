@@ -17,7 +17,7 @@ programa
 				numImpar++
 			}
 		}
-			escreva("São ", numPar, " número(s) par(es) e ", numImpar,"")
+			escreva("São ", numPar, " número(s) par(es) e ", numImpar," número(s) impar(es).")
 	
 	}
 }
