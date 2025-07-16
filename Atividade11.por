@@ -4,11 +4,11 @@ programa
 	funcao inicio()
 	{
 
-		escreva("Me informe o primeiro país: ")
+		escreva("Me informe o numero de habitantes do primeiro país: ")
 		inteiro paisA
 		leia(paisA)
 
-		escreva("Me informe o segundo país: ")
+		escreva("Me informe o numero de habitantes do segundo país: ")
 		inteiro paisB 
 		leia(paisB)
 
@@ -23,6 +23,15 @@ programa
 		
 		inteiro anos = 0
 
+		enquanto(paisA <= 0){
+			escreva("O número de habitantes do Primeiro País é invalido, informe novamente: ")
+			leia(paisA)
+		} enquanto(paisB <= 0){
+			escreva("O número de habitantes do Segundo País é invalido, informe novamente: ")
+			leia(paisB)
+		}
+
+
 		enquanto(paisA<paisB){
 			paisA += paisA*taxaA
 			paisB += paisB*taxaB
@@ -34,7 +43,6 @@ programa
 	
 	}
 }
-
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
